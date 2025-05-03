@@ -9,12 +9,29 @@ import json
 from base64 import b64encode
 from collections.abc import Generator
 from typing import Any
+from pathlib import Path
 
 import requests
 
 
 def main() -> None:
-    print(json.dumps(list(wiki_gg_data(input("wiki.gg api authorization header: ")))))
+    wiki_gg = list(wiki_gg_data(input("wiki.gg api authorization header: ")))
+    print(f"collected {len(wiki_gg)} wikis from wiki.gg/wikis")
+    with Path("src/assets/wiki.gg.json").open("w") as fp:
+        json.dump(wiki_gg, fp)
+    wiki_gg_public = Path("public/wiki.gg")
+    wiki_gg_public.mkdir(parents=True, exist_ok=True)
+    for wiki in wiki_gg:
+        logo_url = wiki["logo"]
+        if logo_url is None:
+            continue
+        logo_path = (wiki_gg_public / wiki["id"]).with_suffix(".png")
+        if logo_path.is_file():
+            continue
+        print(f"fetching {logo_url}")
+        logo = requests.get(logo_url, stream=True)
+        with logo_path.open("wb") as fp:
+            fp.write(logo.content)
 
 
 def wiki_gg_data(auth: str) -> Generator[dict[str, str]]:

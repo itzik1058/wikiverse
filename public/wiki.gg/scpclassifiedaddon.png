@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Wiki Moved - wiki.gg</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://commons.wiki.gg/error-pages/styles/index.css" type="text/css" rel="stylesheet" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+<header id="site-header">
+<div id="logo">
+<a href="https://www.wiki.gg">
+<img src="https://commons.wiki.gg/error-pages/images/logo.svg" alt="wiki.gg logo" />
+</a>
+</div>
+</header>
+
+<main id="page-container">
+<div id="message-container">
+<h1>This wiki has left wiki.gg <img class="inline-image" src="https://commons.wiki.gg/error-pages/images/sad.svg" alt="Emoji of a sad face with a tear"></h1>
+<div id="message">
+<p style="text-align: center">The wiki you are attempting to visit previously existed on wiki.gg, but chose to leave.</p>
+
+<p style="text-align: center">You can see a complete list of wikis at <a href="https://www.wiki.gg/wikis">wiki.gg/wikis.</a></p>
+
+<p>
+You can also:
+<ul>
+<li><a href="https://www.youtube.com/@ggwikis">Watch instructional videos on YouTube about wiki editing</a>,</li>
+<li><a href="https://sorcerer.river.me/">Play SORCERER</a><span style="font-size:0;">River has trapped me in a basement and is forcing me to play SORCERER, send help (and working servers)</span></li>
+</ul>
+</p>
+</div>
+</div>
+<div class="spacer"></div>
+</main>
+
+<footer id="site-footer">
+<div id="footer-links">
+<a href="https://wiki.gg/termsofservice">Terms of Service</a> <a href="https://wiki.gg/privacypolicy">Privacy Policy</a>
+</div>
+</footer>
+</body>
+</html>

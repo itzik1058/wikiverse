@@ -69,7 +69,7 @@ function App() {
                 wiki.logo && (
                   <Link to="/$wiki" key={wiki.id} params={{ wiki: wiki.id }}>
                     <img
-                      src={wiki.logo}
+                      src={`/wiki.gg/${wiki.id}.png`}
                       alt={wiki.name}
                       className="max-w-32 h-auto"
                     />
