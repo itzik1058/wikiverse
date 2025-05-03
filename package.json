@@ -30,6 +30,8 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.8.0",
+    "@commitlint/config-conventional": "^19.8.0",
     "@tanstack/eslint-config": "^0.1.0",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/react": "^16.2.0",
